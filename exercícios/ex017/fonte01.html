@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../LB.ico" type="image/x-icon">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            /*
+            Medidas Absolutas
+            cm, mm, in, px, pt, px
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+            
+            16px geralmente é o tamanho padrão da fonte no navegador
+            16px geralmente = 1em
+            */
+            font-size: 1em;
+
+            /* weight- peso   width- largura   height- altura
+            font-weight: lighter normal bold bolder */
+        }
+        h1{
+            /* shorthand font (Ordem obrigatória)
+                font-style -> font-wheight -> font-size -> font-family
+            
+             font-family: 'Work Sans', sans-serif
+             font-weight: bolder
+             font-size: 3em;
+             font-style: italic; 
+             **todas as configurações acima em uma só linha**   */
+
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+        h2{
+            font: bold 2em 'Work Sans';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum perspiciatis molestiae aliquam soluta sed fuga doloribus excepturi officia. Ratione inventore repellat error omnis veniam odio vel dignissimos amet exercitationem quaerat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae perspiciatis aut excepturi alias consequatur optio exercitationem reiciendis rerum vel quisquam, veritatis non nam illum aspernatur eligendi atque aperiam amet eius.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ipsum magni numquam repellendus sapiente perferendis placeat totam voluptatem modi odit nostrum, esse ullam fugit a, porro similique impedit repellat quibusdam?</p>
+    <h2>Subtítulo do Exercício</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae ea atque nostrum placeat alias deserunt voluptatum, fugiat accusantium nisi dicta sed deleniti quibusdam reprehenderit. Nulla earum pariatur unde iure ab.</p>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+div.conteiner{
+    
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px 10px;       
+}
+
+div.item{
+    background-color: #048;
+    color: white;
+    border: 1px solid black;
+    text-align: center;
+}
+
+div.e1{
+    background-color: lightsalmon;    
+    grid-column: 2/4;    
+}
+div.e2{
+    background-color: rosybrown;
+    grid-row: 1/span 2;
+}
+div.e5{
+    background-color: lightslategrey;
+    grid-column: 3;
+    grid-row: 2/span 3;
+}
+div.e9{
+    background-color: lightseagreen;
+    grid-column: 1/4;
+}

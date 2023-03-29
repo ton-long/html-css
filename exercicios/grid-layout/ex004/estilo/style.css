@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+}
+
+body{    
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+div.header{
+    grid-area: cabecalho;
+}
+div.main{
+    grid-area: conteudo;
+}
+div.aside{
+    grid-area: lateral;
+}
+div.footer{
+    grid-area: rodape;
+}
+
+div.conteiner{ 
+    height: 100vh;
+    width: 100vw;          
+    display: grid;    
+    grid-template-columns: auto auto auto auto ;
+    grid-template-rows: 2fr 3fr 0.5fr;   
+    gap: 5px;
+    grid-template-areas: 
+        "cabecalho cabecalho cabecalho cabecalho"
+        "conteudo conteudo conteudo lateral"
+        "rodape rodape rodape rodape"
+    ;     
+}
+
+div.item{
+    background-color: #048;
+    color: white;
+    border: 1px solid black;
+    text-align: center;
+}

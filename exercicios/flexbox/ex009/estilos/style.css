@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+.container{
+    display: flex;    
+    border: 5px solid black;  
+    width: 800px;    
+}
+
+.container > *{    
+    background-color: rgba(141, 141, 141, 0.37);
+    border-radius: 3px;
+    border: 1px solid black;
+    padding: 20px 0;
+    width: 100px;
+    text-align: center;
+    transition: all 150ms ease;
+
+    flex-grow: 1;
+}
+
+.container div:nth-child(2){
+    flex-grow: 3;
+}
+
+.container div:nth-child(3){
+    flex-grow: 4;
+}
+
+.container > *:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+}

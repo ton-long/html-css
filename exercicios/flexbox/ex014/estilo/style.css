@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 97vh;
+}
+.container main{
+    flex: 1;
+    background-color: transparent;
+    border: none;
+}
+
+.container > *{    
+    background-color: rgba(141, 141, 141, 0.37);
+    border-radius: 3px;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    transition: all 150ms ease;
+}

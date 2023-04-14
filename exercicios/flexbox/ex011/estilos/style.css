@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+.container{
+    display: flex; 
+    
+    border: 5px solid black;
+    width: 1000px;
+}
+
+.container > *{    
+    background-color: rgba(141, 141, 141, 0.37);
+    border-radius: 3px;
+    border: 1px solid black;    
+    padding: 20px 0;   
+    text-align: center;
+    transition: all 150ms ease; 
+    
+    flex: 1 1 100px;    
+}
+
+.container > *:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+}

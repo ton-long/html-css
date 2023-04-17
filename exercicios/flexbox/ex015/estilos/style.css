@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+body.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 97vh;
+}
+
+.container > *{    
+    background-color: rgba(141, 141, 141, 0.37);
+    border-radius: 3px;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;    
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.main{
+    flex: 1;
+}
+
+.sidebar, .ads{
+    flex-basis: 100px;
+}
+
+@media (min-width:900px){
+    .content{
+        flex-direction: row;
+    }
+    .sidebar{
+        order: -1;
+    }
+}
